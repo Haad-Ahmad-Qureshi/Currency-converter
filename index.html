@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+     integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Currency Converter</title>
 </head>
 <body>
@@ -19,25 +22,30 @@
     <div class="from">
         <p>From:</p>
         <div class="select-container">
-            <img src="">
+            <img src="https://flagsapi.com/US/flat/64.png">
     <select name="from">
         <option value="USD">USD</option>
         <option value="EUR">EUR</option>
         <option value="GBP">GBP</option>
     </select>
     </div>
-
+  </div>
+  <i class="fa-solid fa-arrow-right-arrow-left"></i>
     <div class="to">
-
+ <p>To:</p>
+        <div class="select-container">
+            <img src="https://flagsapi.com/PK/flat/64.png">
+    <select name="to">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+    <option value="PKR" selected>PKR</option>
+    </select>
     </div>
-
-
-
     </div>
-
-
 </div> 
-
+<div class="msg">1USD=289PKR</div>
+<button>Get exchange rate</button>
 </form>
 
     </div>
