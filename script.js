@@ -31,3 +31,16 @@ for (let select of dropdown) {
     updateFlag(evt.target);
   });
 }
+
+// Update flag
+const updateFlag = (element) => {
+  let currcode = element.value;
+  let countryCode = countryList[currcode];
+
+  let newSrc = `https://flagsapi.com/${countryCode}/flat/64.png`;
+
+  let img = element.parentElement.querySelector("img");
+
+  img.setAttribute("src", newSrc);
+};
+
